@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Temática Indígena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Projeto Agrinho 2026</h1>
+        <h2>Nossa História, Nossas Raízes: A Cultura Indígena</h2>
+    </header>
+
+    <main>
+        <section class="instrucoes">
+            <p>Clique nos elementos abaixo para descobrir mais sobre os saberes e a cultura indígena.</p>
+        </section>
+
+        <section class="galeria-interativa">
+            <div class="cartao" onclick="mostrarInformacao('natureza')">
+                <div class="icone">🌿</div>
+                <h3>Frutos Nativos</h3>
+            </div>
+
+            <div class="cartao" onclick="mostrarInformacao('artesanato')">
+                <div class="icone">🧺</div>
+                <h3>Artesanato</h3>
+            </div>
+
+            <div class="cartao" onclick="mostrarInformacao('tradicao')">
+                <div class="icone">🎨</div>
+                <h3>Tradições</h3>
+            </div>
+        </section>
+
+        <div id="painel-info" class="oculto">
+            <h3 id="titulo-info"></h3>
+            <p id="texto-info"></p>
+            <button onclick="fecharInformacao()">Fechar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para o Projeto Agrinho 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
