@@ -1,0 +1,130 @@
+/* Reset básico para remover margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fdfbf7; /* Cor de fundo suave */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2d5a27; /* Verde floresta */
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #e8dbce;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.instrucoes {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Estilo da Galeria e dos Cartões */
+.galeria-interativa {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cartao {
+    background-color: white;
+    border: 2px solid #d35400; /* Laranja terra */
+    border-radius: 12px;
+    padding: 2rem;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartao:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(211, 84, 0, 0.2);
+    background-color: #fff9f5;
+}
+
+.cartao .icone {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Painel de Informações Dinâmico */
+#painel-info {
+    margin-top: 3rem;
+    background-color: #fff;
+    border-left: 6px solid #2d5a27;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: opacity 0.3s ease;
+}
+
+#painel-info h3 {
+    color: #d35400;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#painel-info p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+#painel-info button {
+    background-color: #2d5a27;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#painel-info button:hover {
+    background-color: #1e3f1a;
+}
+
+/* Classe para esconder o painel */
+.oculto {
+    display: none;
+}
+
+footer {
+    background-color: #2d5a27;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
